@@ -39,12 +39,12 @@ var customLayer = L.geoJson(null   ,{
         return L.marker(latlng, {icon: airportIcon});
     }
 })
-
+//After adding, the icon disappeared
 // FIXME: Load CSV data into leaflet markers
 var airportsLayer = omnivore.csv('airports.csv', null, customLayer);
 
 airportsLayer.addto(map);
-
+//Icon for airport is not showing up?
 omnivore.csv('airports.csv').addTo(map);
 
 // FIXME: Add styling to markers
